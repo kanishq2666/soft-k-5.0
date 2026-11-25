@@ -1,0 +1,17 @@
+{
+  "name": "Ashoka MSO Playlist - Single-Channel Broadcast Playout",
+  "short_name": "Ashoka MSO Playlist",
+  "description": "Professional Single-Channel Broadcast Playout Automation Studio with Top & Bottom Overlays, 8-Side Logos, News Ticker, and Folder Playlist Scheduling",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#050608",
+  "theme_color": "#ef4444",
+  "icons": [
+    {
+      "src": "/assets/ashoka-icon.svg",
+      "sizes": "256x256",
+      "type": "image/svg+xml",
+      "purpose": "any maskable"
+    }
+  ]
+}

@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" height="256" viewBox="0 0 256 256" width="256">
+  
+  <rect fill="#000000" height="240" rx="54" ry="54" stroke="#ffffff" stroke-width="10" width="240" x="8" y="8"/>
+
+  
+  <rect fill="none" height="216" rx="44" ry="44" stroke="#ffffff" stroke-opacity="0.35" stroke-width="2" width="216" x="20" y="20"/>
+
+  
+  <g fill="none" stroke="#ffffff" stroke-linecap="round" stroke-linejoin="round">
+    
+    <line stroke-width="8" x1="112" x2="78" y1="74" y2="36"/>
+    <circle cx="76" cy="34" fill="#ffffff" r="6" stroke="none"/>
+    
+    <line stroke-width="8" x1="128" x2="164" y1="74" y2="36"/>
+    <circle cx="166" cy="34" fill="#ffffff" r="6" stroke="none"/>
+    
+    <path d="M 98 76 Q 120 62 142 76" fill="#000000" stroke-width="7"/>
+  </g>
+
+  
+  <g>
+    
+    <rect fill="#000000" height="120" rx="24" ry="24" stroke="#ffffff" stroke-width="9" width="164" x="34" y="74"/>
+
+    
+    <rect fill="#000000" height="92" rx="14" ry="14" stroke="#ffffff" stroke-width="5" width="116" x="48" y="88"/>
+
+    
+    <circle cx="181" cy="108" fill="#ffffff" r="7"/>
+    <circle cx="181" cy="128" fill="#000000" r="5" stroke="#ffffff" stroke-width="3"/>
+    <line stroke="#ffffff" stroke-linecap="round" stroke-width="3.5" x1="175" x2="187" y1="148" y2="148"/>
+    <line stroke="#ffffff" stroke-linecap="round" stroke-width="3.5" x1="175" x2="187" y1="158" y2="158"/>
+    <line stroke="#ffffff" stroke-linecap="round" stroke-width="3.5" x1="175" x2="187" y1="168" y2="168"/>
+
+    
+    <line stroke="#ffffff" stroke-linecap="round" stroke-width="8" x1="74" x2="62" y1="196" y2="214"/>
+    <line stroke="#ffffff" stroke-linecap="round" stroke-width="8" x1="158" x2="170" y1="196" y2="214"/>
+  </g>
+
+  
+  <g fill="#ffffff">
+    
+    <path d="M 62 110 H 100 V 122 H 87 V 160 H 75 V 122 H 62 Z"/>
+    
+    <path d="M 104 110 H 117 L 126 144 L 135 110 H 148 L 132 160 H 120 Z"/>
+  </g>
+
+  
+  <g>
+    <circle cx="188" cy="178" fill="#000000" r="36" stroke="#ffffff" stroke-width="8"/>
+    
+    <path d="M 177 160 L 209 178 L 177 196 Z" fill="#ffffff" stroke="#ffffff" stroke-linejoin="round" stroke-width="3"/>
+  </g>
+</svg>

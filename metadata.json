@@ -1,0 +1,12 @@
+{
+  "name": "ash playout ",
+  "description": "Professional single-channel broadcast playout automation studio with Top & Bottom CG overlays, 8-side logos, news crawler ticker, and folder-grouped playlist scheduling.",
+  "requestFramePermissions": [
+    "camera",
+    "microphone",
+    "display-capture"
+  ],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}

@@ -1,0 +1,106 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/svg+xml" href="/assets/ashoka-icon.svg?v=2026.12" />
+    <link rel="manifest" href="/manifest.json" />
+    <meta name="theme-color" content="#090d16" />
+    <title>ASHOKA CABLE TV PLAYOUT - Corporate Broadcast Playout Automation</title>
+    <meta name="description" content="Professional single-channel broadcast playout automation studio with Top & Bottom CG overlays, 8-side logos, news crawler ticker, and folder-grouped playlist scheduling." />
+    <meta property="og:title" content="ASHOKA CABLE TV PLAYOUT - Corporate Broadcast Playout Automation" />
+    <meta property="og:description" content="Professional single-channel broadcast playout automation studio with Top & Bottom CG overlays, 8-side logos, news crawler ticker, and folder-grouped playlist scheduling." />
+    <meta property="og:type" content="website" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <script>
+      (function () {
+        function isWasmClosureErr(errOrMsg) {
+          var msg =
+            typeof errOrMsg === 'string'
+              ? errOrMsg
+              : errOrMsg && (errOrMsg.message || String(errOrMsg))
+                ? String(errOrMsg.message || errOrMsg)
+                : '';
+          return (
+            msg.indexOf('closure invoked recursively') !== -1 ||
+            msg.indexOf('after being dropped') !== -1 ||
+            msg.indexOf('recursive use of an object') !== -1 ||
+            msg.indexOf('Ruffle') !== -1
+          );
+        }
+
+        window.addEventListener(
+          'error',
+          function (e) {
+            if (isWasmClosureErr(e.message) || isWasmClosureErr(e.error)) {
+              e.preventDefault();
+              e.stopImmediatePropagation();
+              return false;
+            }
+          },
+          true
+        );
+
+        window.addEventListener(
+          'unhandledrejection',
+          function (e) {
+            if (isWasmClosureErr(e.reason)) {
+              e.preventDefault();
+              e.stopImmediatePropagation();
+              return false;
+            }
+          },
+          true
+        );
+
+        if (typeof window.requestAnimationFrame === 'function') {
+          var origRAF = window.requestAnimationFrame.bind(window);
+          window.requestAnimationFrame = function (cb) {
+            return origRAF(function (ts) {
+              try {
+                return cb(ts);
+              } catch (err) {
+                if (!isWasmClosureErr(err)) throw err;
+              }
+            });
+          };
+        }
+
+        if (typeof window.setTimeout === 'function') {
+          var origSetTimeout = window.setTimeout.bind(window);
+          window.setTimeout = function (fn, delay) {
+            if (typeof fn !== 'function') {
+              return origSetTimeout.apply(window, arguments);
+            }
+            var args = Array.prototype.slice.call(arguments, 2);
+            return origSetTimeout(function () {
+              try {
+                return fn.apply(this, args);
+              } catch (err) {
+                if (!isWasmClosureErr(err)) throw err;
+              }
+            }, delay);
+          };
+        }
+
+        if (typeof window.ResizeObserver === 'function') {
+          var OrigRO = window.ResizeObserver;
+          window.ResizeObserver = function (cb) {
+            return new OrigRO(function (entries, observer) {
+              try {
+                return cb(entries, observer);
+              } catch (err) {
+                if (!isWasmClosureErr(err)) throw err;
+              }
+            });
+          };
+          window.ResizeObserver.prototype = OrigRO.prototype;
+        }
+      })();
+    </script>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
+</html>
